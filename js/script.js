@@ -5,17 +5,17 @@
 // This file contains the JS functions for index.html
 
 "use strict"
-
 /**
- * This function calculates area of a triangle.
+ * This function calculates volume Of A Sphere.
  */
+
 function calculateVolumeOfSphere() {
   // input
-  const volume = parseFloat(document.getElementById('volume-Of-Sphere').value)
+  const radius = parseFloat(document.getElementById('radius-Of-Sphere').value)
   // process
-  const volumeOfSphere = 4 / 3 * 3.14 * volume
+  const volume = Math.abs(radius);
+  const volumeOfSphere = (4 / 3) * Math.PI * Math.pow(radius, 3);
   // output
   document.getElementById('volume').innerHTML
-    = 'Volume is: ' + 4 / 3 * 3.14 * volume + '.'
+    = 'Volume is: ' + (4 / 3) * Math.PI * Math.pow(radius, 3) + '.'
 }
-
