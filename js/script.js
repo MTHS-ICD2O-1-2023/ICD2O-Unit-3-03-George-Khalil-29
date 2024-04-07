@@ -9,15 +9,13 @@
 /**
  * This function calculates area of a triangle.
  */
-function calculateVolumeOfPyramid() {
+function calculateVolumeOfSphere() {
   // input
-  const length = parseFloat(document.getElementById('length-of-pyramid').value)
-  const width = parseFloat(document.getElementById('width-of-pyramid').value)
-  const height = parseFloat(document.getElementById('height-of-pyramid').value)
+  const volume = parseFloat(document.getElementById('volume-Of-Sphere').value)
   // process
-  const volumeOfPayrmid = (length * width * height) / 3
+  const volumeOfSphere = 4 / 3 * 3.14 * volume
   // output
   document.getElementById('volume').innerHTML
-    = 'Volume is: ' + length * width * height / 3 + ' mm³.'
+    = 'Volume is: ' + 4 / 3 * 3.14 * volume + '.'
 }
 
